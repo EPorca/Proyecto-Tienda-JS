@@ -1,0 +1,255 @@
+
+/*Reset*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Paleta de colores*/
+/*#c9c8c8 gris , #d8d8d8 blanco , #c8b080 marron claro*/
+
+
+
+/*Fondo*/
+
+body{
+    background-color: #c9c8c8;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Menu*/
+header{
+    top: 0px;
+    width: 100%;
+    display:flex;
+    position: fixed;
+    z-index: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.hijoMenu{
+    display: grid;
+    grid-area: menu;
+    padding: 0;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px black;
+    background-color:#c8b080 ;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.hijoMenu:hover{
+    scale: 0.9;
+    transition: 1s;
+    color: white;
+    background-color:#b19d74 ;
+}
+
+a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px black;
+    color: #f0f0f0;
+}
+
+/*ajuste de carrito*/
+
+.contenedor{
+    display: grid;
+    grid-template-areas: "logo logo logo logo logo logo logo logo logo logo logo logo menu menu menu menu carrito";
+}
+
+
+.imgCarrito{
+    width: 60px;
+    height: 60px;
+}
+
+.imgCarrito:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+.carrito{
+    border-radius: 15px;
+    box-shadow: 0px; background-color: #c8b080;
+    padding: 15px;
+    box-shadow: 2px 2px 3px black;
+    grid-area: carrito;
+}
+
+.carrito:hover{
+    scale: 1.1;
+    transition: 1s;
+    background-color:#b19d74 ;
+}
+
+#contadorCarrito{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+}
+
+#contadorCarrito:hover{
+    color: white;
+    text-decoration: none;
+}
+
+/*ajuste de imagen logo*/
+.logo{
+    width: 140px;
+    height: 140px;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 150px;
+    grid-area: logo;
+}
+
+/*ajuste del main en index*/
+main{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.divI{
+    padding: 100px;
+}
+
+.indexT{
+    font-size: 30px;
+    color: #c2a468;
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.indexP{
+    font-size: 25px;
+    color:#494949;
+    margin: 20px;
+    font-family:'Quicksand', sans-serif;;
+    text-align: center;
+}
+
+
+
+/*estilo de imagen producto*/
+.imgTienda{
+    width: 300px;
+    height: 199px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+
+}
+
+/*estilo de contenedor producto*/
+
+.contenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.producto{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 20px;
+}
+
+.botonAgregar{
+    background-color: #494949;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.botonAgregar:hover{
+    background-color: #5a5a5a;
+}
+
+.contenedor>div{
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        background-color: #000000;
+        border-radius: 20px;
+}
+
+.contenedorProductos>div:hover{
+        background-color: #c8b080;
+        color: white;
+}
+
+/*producto en carrito*/
+.productoEnCarrito img{
+    display: flex;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.tituloCarrito{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #dad9d9;
+    color: #c8b080;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgb(66, 62, 62);
+    box-shadow: 2px 2px 3px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.padreTitulo{
+    padding: 30%;
+}
+
+
+/* botones carrito */
+
+#contenedorBotones{
+    background-color:#333232 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+}
+
+#botonComprar{
+    background-color: rgb(52, 221, 52);
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#vaciar-carrito{
+    background-color: rgb(245, 51, 51);
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#seguirComprando{
+    background-color: #b4b4b4;
+    gap: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
